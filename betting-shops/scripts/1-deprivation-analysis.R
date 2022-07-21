@@ -5,6 +5,10 @@ library(ggplot2)
 options(box.path = getwd())
 box::use(functions/theme[...])
 
+
+#############################################################################################################################
+# Import data
+
 ## Get data for deprivation
 deprivation_lsoa <- readxl::read_xlsx("betting-shops/data/deprivation-lsoa.xlsx", sheet = 2) |>
   select(lsoa = `LSOA code (2011)`, lsoa_name = `LSOA name (2011)`,
@@ -45,6 +49,13 @@ la_n_bookies[, region_name := case_when(region %in% c("North East", "North West"
                                         region %in% c("South West", "South East") ~ "South",
                                         TRUE ~ region)]
 
+
+#############################################################################################################################
+## Public data: number of bookies by local authority district plus deprivation score
+readr::write_csv(la_n_bookies, "betting-shops/public/betting-shops-deprivation.csv")
+#############################################################################################################################
+
+## Create chart comparing deprivation to bookies per mil
 la_n_bookies[!is.na(region_name)] |>
   ggplot(aes(deprivation, bookies_per_million, size = population, colour = region_name, fill = region_name)) +
   geom_point(shape = 21) +
@@ -64,6 +75,7 @@ la_n_bookies[!is.na(region_name)] |>
   guides(colour = guide_legend(override.aes = list(size = 4, shape = 16, alpha = 0.5))) +
   theme(plot.caption = element_text(hjust = 0, size = 10))
 
+## n_bookies by imd decile
 lsoa_bookies <- bookies[
   , .(n_bookies = .N), by = lsoa
 ][
@@ -77,6 +89,7 @@ lsoa_bookies[order(imd_decile), .(n_bookies = sum(n_bookies)), by = imd_decile] 
   theme_piers() +
   labs(x = "Decile of deprivation score (the lower the more deprived)", y = "Number of bookies")
 
+# Share of bookies in 25% most deprived lower super output areas
 lsoa_bookies[order(imd_rank)][1:(nrow(lsoa_bookies)/4), sum(n_bookies) / sum(lsoa_bookies$n_bookies)]
 
 

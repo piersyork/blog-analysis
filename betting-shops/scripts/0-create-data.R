@@ -2,6 +2,7 @@ library(sf)
 library(osmdata)
 library(dplyr)
 
+#############################################################################################################################
 ## 1. Get map data of UK Local Authority Districts from the geoportal API. 20m resolution ##
 uk_map <- st_read("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_December_2021_GB_BGC/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson") |>
   rename(area_code = LAD21CD, area_name = LAD21NM)
@@ -9,16 +10,8 @@ uk_map <- st_read("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/ser
 # Save as .rds
 saveRDS(uk_map, file = "betting-shops/data/uk_local_authority_map.rds")
 
-areas <- readr::read_csv("~/Downloads/Output_Area_to_Lower_Layer_Super_Output_Area_to_Middle_Layer_Super_Output_Area_to_Local_Authority_District_(December_2020)_Lookup_in_England_and_Wales.csv") |>
-  select(lsoa = LSOA11CD, area_code = LAD20CD, area_name = LAD20NM, region = RGN20NM) |>
-  distinct() |>
-  as.data.table()
 
-## 2. Get data on deprivation
-deprivation_lsoa <- readxl::read_xlsx("~/Downloads/File_1_-_IMD2019_Index_of_Multiple_Deprivation.xlsx", sheet = 2) |>
-  janitor::clean_names()
-
-
+##############################################################################################################################
 ## 2. Get data for locations of betting shops from Open Street Map ##
 
 # Get all points for england and wales
@@ -106,21 +99,6 @@ bookies_in_uk <- uk_bookies |>
 
 # Save as .rds
 saveRDS(bookies_in_uk, "betting-shops/data/bookies_in_uk.rds")
-
-
-## 3. Lower layer super output area
-lsoa_map <- st_read("~/Downloads/Lower_Layer_Super_Output_Areas_(December_2011)_Boundaries_Generalised_Clipped_(BGC)_EW_V3.geojson")
-
-bookies <- bookies_in_uk |>
-  left_join(deprivation, by = c("lsoa" = "lsoa_code"))
-
-lsoa_bookies <- as.data.table(bookies)[, .(n_bookies = .N), by = lsoa][as.data.table(lsoa_map)[, .(lsoa = LSOA11CD, lsoa_name = LSOA11NM, geometry)], on = "lsoa"]
-
-lsoa_bookies[is.na(n_bookies), n_bookies := 0]
-
-lsoa_bookies <- areas[lsoa_bookies, on = "lsoa"]
-
-saveRDS(lsoa_bookies, file = "betting-shops/data/lsoa_bookies.rds")
 
 
 
