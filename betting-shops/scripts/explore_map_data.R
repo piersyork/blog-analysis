@@ -2,13 +2,15 @@ library(dplyr)
 library(sf)
 library(tmap)
 library(ggplot2)
+library(data.table)
 
 options(box.path = getwd())
-box::use(functions/theme[theme_piers])
+box::use(functions/theme[...])
 
 ## 1. Load data produced by 0-create-data.R ##
 uk_map <- readRDS("betting-shops/data/uk_local_authority_map.rds") |>
   select(area_code, area_name, geometry)
+
 bookies_in_uk <- readRDS("betting-shops/data/bookies_in_uk.rds") |>
   select(area_code, area_name, geometry)
 
@@ -79,7 +81,7 @@ plot1 <- (
 plot1 |>
   leaflet::removeTiles(1)
 
-tm_dots()
+
 
 tmap_mode("plot")
 qtm(bookies_in_uk, dots.size = 0.002, dots.alpha = 0.5)
@@ -98,19 +100,29 @@ bookies_by_la_map |>
   na.omit() |>
   mutate(label = ifelse(area_name %in% c("City of London"), area_name, NA)) |>
   ggplot(aes(deprivation, bookies_per_100k, size = population, colour = region_name)) +
-  geom_point(alpha = 0.3) +
-  ggrepel::geom_text_repel(aes(label = label), show.legend = FALSE,
-                           size = 4, point.padding = 0.8, box.padding = 2, hjust = 1,
+  geom_point(alpha = 0.5) +
+  ggrepel::geom_text_repel(aes(label = label), show.legend = FALSE, min.segment.length = 0,
+                           size = 4, point.padding = 0.8, box.padding = 2, hjust = -1, vjust = 1,
                            arrow = arrow(angle = 30, length = unit(0.1, "inches"))) +
   # geom_text(aes(label = "City of London", y = 120, x = 15), inherit.aes = FALSE) +
   scale_y_log10(limits = c(NA, 1000)) +
   scale_size_area(max_size = 10, labels = scales::label_number(big.mark = ", ")) +
-  owidR::scale_colour_owid() +
-  geom_smooth(aes(deprivation, bookies_per_100k), method = "lm", colour = "#EC0175", inherit.aes = FALSE) +
+  scale_colour_piers() +
+  geom_smooth(aes(deprivation, bookies_per_100k), method = "lm", colour = "#88A2AA", inherit.aes = FALSE) +
   theme_piers() +
-  labs(title = "Areas with higher deprivation see a higher number of bookies per 100k people",
+  labs(title = "Areas with higher deprivation see a higher number of \nbookies per 100k people",
        x = "Index of Deprivation", y = "Bookies per 100k people", colour = "Region", size = "Population")
 
+
+bookies_dt <- bookies_by_la_map |>
+  as.data.table() |>
+  select(area_name, deprivation, imd_rank, n_bookies, bookies_per_100k) |>
+  na.omit()
+
+# Almost half of bookies are located in the 33% most deprived areas
+bookies_dt[order(-deprivation)][1:round(nrow(bookies_dt) / 3), sum(n_bookies)] / sum(bookies_dt$n_bookies) * 100
+
+bookies_dt[, max(imd_rank)/10]
 
 
 bookies_by_la_map |>
@@ -135,7 +147,16 @@ bookies_in_uk$OBJECTID |>
   as.character() |>
   skimr::skim()
 
+lsoa_bookies[
+  , .(n_bookies = sum(n_bookies)), by = area_code
+][
+  as.data.table(uk_map), on = "area_code"
+] |>
+  st_as_sf() |>
+  qtm(fill = "n_bookies")
 
+
+lsoa_bookies[order(-n_bookies), head(.SD)]
 
 
 

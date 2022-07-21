@@ -25,11 +25,11 @@ happiness <- wvs[
     avg_happiness = mean(happiness)),
   by = code
 ][
-  order(-avg_happiness),
+  ,
   .(code = countrycode::countrycode(code, "iso2c", "iso3c"), entity, avg_happiness)
 ][
   gdp,
-  on = "code",
+  on = c("code", "entity"),
   nomatch = 0
 ]
 
@@ -38,6 +38,11 @@ happiness |>
   geom_point() +
   geom_smooth(method = lm)
 
+head(happiness) |>
+  ggplot(aes(avg_happiness, entity)) +
+  geom_col()
+
+owidR::owid_search("happiness")
 
 
 
