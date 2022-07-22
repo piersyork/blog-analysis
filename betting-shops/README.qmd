@@ -202,7 +202,7 @@ bookies_deprivation[!is.na(region_name)] |>
   annotate("curve", x = 20.5, y = 1200, xend = 15.1, yend = 2500,
            curvature = -0.25, arrow = arrow(length = unit(0.5, "cm")), colour = "#393A76") +
   theme_piers() +
-  labs(title = "Local authorities with higher deprivation see a higher number of \nbookies per person",
+  labs(title = "Local authorities with higher deprivation see a higher \nnumber of bookies per person",
        subtitle = "Bookies per million people vs Index of Deprivation",
        x = "Index of Multiple Deprivation", y = "Bookies per million people", colour = "Region", size = "Population",
        caption = "Source: Open Street Maps; Ministry of Housing, Communties and Local Government") +
