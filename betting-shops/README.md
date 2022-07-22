@@ -8,9 +8,15 @@ calculate the number of bookmakers per million people by local
 authority. Comparing this data to the Index of Multiple Deprivation
 shows how more deprived areas see a higher number of bookies per person.
 
-`scripts/0-create-data.R`
+[`scripts/0-create-data.R`](https://github.com/piersyork/blog-analysis/tree/master/betting-shops/scripts/0-create-data.R)
+is the script to generate the data on the locations of betting shops.
+[`scripts/1-deprivation-analysis.R`](https://github.com/piersyork/blog-analysis/tree/master/betting-shops/scripts/1-deprivation-analysis.R)
+merges this data with deprivation data and creates the public dataset at
+[`public/`](https://github.com/piersyork/blog-analysis/tree/master/betting-shops/public).
 
-# Data on bookmakers
+# Methodology
+
+## Data on bookmakers
 
 The data on the locations of bookmakers comes from Open Street Map.
 Using the `osmdata` r package, I collected the locations of each
@@ -123,7 +129,7 @@ bookies <- bookies |>
 This leaves us with a point coordinate for each bookmaker in the UK
 along with variables for what area it is located.
 
-# Merging with data on deprivation
+## Merging with data on deprivation
 
 For data on deprivation I used the English Index of Deprivation from the
 Ministry of Housing Communities and Local Government (now the Department
