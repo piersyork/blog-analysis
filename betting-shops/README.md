@@ -173,3 +173,28 @@ la_n_bookies[, region_name := case_when(region %in% c("North East", "North West"
 This data is available in `public/betting-shops-deprivation.csv`. It is
 subject to the [Open Street Map
 license](https://www.openstreetmap.org/copyright).
+
+``` r
+library(ggplot2)
+
+deprivation_plot <- bookies_deprivation[!is.na(region_name)] |>
+  ggplot(aes(deprivation, bookies_per_million, size = population, colour = region_name, fill = region_name)) +
+  geom_point(shape = 21) +
+  scale_y_log10() +
+  scale_size_area(max_size = 7, labels = scales::label_number(big.mark = ",")) +
+  scale_colour_piers() +
+  scale_fill_piers(alpha = 0.5, guide = "none") +
+  geom_smooth(aes(deprivation, bookies_per_million), method = "lm", colour = "#044a6b", inherit.aes = FALSE) +
+  annotate("text", label = "City of London", y = 1200, x = 24, colour = "#393A76") +
+  annotate("curve", x = 20.5, y = 1200, xend = 15.1, yend = 2500,
+           curvature = -0.25, arrow = arrow(length = unit(0.5, "cm")), colour = "#393A76") +
+  labs(title = "Local authorities with higher deprivation see a higher number of \nbookies per person",
+       subtitle = "Bookies per million people vs Index of Deprivation",
+       x = "Index of Multiple Deprivation", y = "Bookies per million people", colour = "Region", size = "Population",
+       caption = "Source: Open Street Maps; Ministry of Housing, Communties and Local Government") +
+  guides(colour = guide_legend(override.aes = list(size = 4, shape = 16, alpha = 0.5)))
+```
+
+    `geom_smooth()` using formula 'y ~ x'
+
+![](images/betting-plot-1.png)

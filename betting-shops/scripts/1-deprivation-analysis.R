@@ -32,10 +32,6 @@ uk_pop <- readxl::read_xls("betting-shops/data/uk-population-estimates-mid-2020.
 bookies <- readRDS("betting-shops/data/bookies_in_uk.rds") |>
   as.data.table()
 
-bookies |>
-  sf::st_as_sf()
-
-
 la_n_bookies <- bookies[, .(n_bookies = .N), by = .(region, area_name, area_code)][
   as.data.table(uk_pop), on = "area_code", nomatch = 0
 ][
