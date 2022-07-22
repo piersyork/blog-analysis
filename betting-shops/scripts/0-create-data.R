@@ -38,7 +38,7 @@ uk_bookies <- remove_dups(bookmakers_scotland) |>
   bind_rows(remove_dups(bookmakers)) |>
   distinct() |>
   select(name, addr.postcode) |>
-  st_transform(st_crs(uk_map))
+  st_transform(27700)
 
 # get lsoa codes from postcodes.io
 get_lsoa <- function(x) {
