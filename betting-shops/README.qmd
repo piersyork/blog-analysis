@@ -179,6 +179,8 @@ deprivation_plot <- bookies_deprivation[!is.na(region_name)] |>
 
 ```{r betting-plot}
 #| echo: false
+#| fig-width: 10
+#| fig-height: 5
 
 library(data.table)
 library(ggplot2)
