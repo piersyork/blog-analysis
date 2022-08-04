@@ -88,6 +88,8 @@ lsoa_bookies[order(imd_decile), .(n_bookies = sum(n_bookies)), by = imd_decile] 
 # Share of bookies in 25% most deprived lower super output areas
 lsoa_bookies[order(imd_rank)][1:(nrow(lsoa_bookies)/4), sum(n_bookies) / sum(lsoa_bookies$n_bookies)]
 
-
+# The most deprived 10% of areas have 6.5x the number of bookies as the least deprived
+lsoa_bookies[imd_decile == 1, sum(n_bookies)] /
+  lsoa_bookies[imd_decile == 10, sum(n_bookies)]
 
 
