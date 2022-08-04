@@ -37,10 +37,9 @@ clean_2017 <- scores_2017[
 ]
 
 clean_happiness |>
-  # bind_rows(clean_happiness[, .(country, continent = "World", happiness_score)]) |>
   na.omit() |>
   ggplot(aes(happiness_score, continent, colour = continent)) +
-  ggdist::geom_dots(binwidth = 0.08, show.legend = FALSE, shape = 19) +
+  ggdist::geom_dots(binwidth = 0.07, show.legend = FALSE, shape = 19) +
   scale_x_continuous(breaks = c(2:8), limits = c(2, 8)) +
   scale_y_discrete(expand = c(0.05, 0.01)) +
   coord_cartesian(clip = "off") +
@@ -53,16 +52,16 @@ clean_happiness |>
         legend.position = "none",
         plot.caption = element_text(hjust = 0),
         plot.caption.position = "plot") +
-  labs(title = "There is a large happiness inequality between Africa \nand the rest of the world",
-       subtitle = "The distribution of countries happiness by continent",
+  labs(title = "Of the 25% least happy countries, almost 70% are \nin Africa",
+       subtitle = "The distribution of happiness around the world shows a large \nhappiness inequality",
        x = "Happiness Score",
        caption = "Source: World Happiness Report 2022 \nHappiness is measured on a scale of one to ten, calculated using six factors from the Gallup World Survey.") +
-  geom_text(aes(3.6, 3.5, label = "Afghanistan"), colour = "grey") +
-  geom_curve(aes(3.1, 3.5, xend = 2.43, yend = 3.1),
-             colour = "grey", curvature = 0.2, arrow = arrow(length = unit(0.4, "cm"))) +
-  geom_text(aes(7.2, 1.5, label = "Mauritius"), colour = "grey") +
-  geom_curve(aes(6.8, 1.5, xend = 6.1, yend = 1.1),
-             colour = "grey", curvature = 0.2, arrow = arrow(length = unit(0.4, "cm")))
+  annotate("text", 3.6, 3.6, label = "Afghanistan", colour = "grey60") +
+  annotate("curve", 3.1, 3.6, xend = 2.5, yend = 3.2, colour = "grey",
+           curvature = 0.2, arrow = arrow(length = unit(0.4, "cm"))) +
+  annotate("text", 7.1, 1.6, label = "Mauritius", colour = "grey60") +
+  annotate("curve", 6.7, 1.6, xend = 6.15, yend = 1.2, colour = "grey",
+           curvature = 0.2, arrow = arrow(length = unit(0.4, "cm")))
 
 clean_happiness[
   order(happiness_score),
@@ -77,19 +76,22 @@ clean_cont <- clean_2017[, .(score_17 = median(happiness_score)), by = .(contine
 
 clean_cont |>
   ggplot() +
-  geom_segment(aes(x = score_17, xend = score_22, y = continent, yend = continent), colour = "grey65") +
+  geom_segment(aes(x = score_17, xend = score_22, y = continent, yend = continent), colour = "grey75") +
   geom_point(aes(score_17, continent, colour = "2016"), size = 3) +
   geom_point(aes(score_22, continent, colour = "2019-21"), size = 3) +
   scale_x_continuous(breaks = 2:8, limits = c(2, 8)) +
   scale_colour_piers() +
-  labs(title = "Despite covid most places have seen an increase in \nhappiness in the last five years") +
+  labs(title = "Despite covid most places have seen an increase in \nhappiness in the last five years",
+       x = "Average Happiness Score") +
   theme_piers() +
-  theme(axis.title = element_blank(),
-        legend.title = element_blank(), legend.position = "top")
+  theme(axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        legend.position = "top")
 
 clean_both <- clean_2017[, .(country, score_17 = happiness_score)] |>
   inner_join(clean_happiness[!country %like% "\\*$", .(country, score_22 = happiness_score)])
 
+# Percent of countries that have had happiness increase
 clean_both[, .(country, change = score_22 - score_17, increased = score_22 - score_17 > 0)][, sum(increased)]
 
 # Of the 25% least happy countries, 70% are in Africa
@@ -102,7 +104,7 @@ clean_happiness[
 ]
 
 # 69% of the third least happy countries are in africa
-clean_happiness[1:(round(nrow(clean_happiness))/4), mean(continent == "Africa", na.rm = TRUE) |> round(3)]
+clean_happiness[1:(round(nrow(clean_happiness))*0.25), mean(continent == "Africa", na.rm = TRUE) |> round(3)]
 
 
 
