@@ -1,318 +1,318 @@
-"","area_name","area_code","region_name","region","n_bookies","population","deprivation","imd_rank","bookies_per_million"
-"1","South Cambridgeshire","E07000012","Midlands and East","East of England",1,160904,8.496,301,6.21488589469497
-"2","Malvern Hills","E07000235","Midlands and East","West Midlands",1,79445,16.066,192,12.5873245641639
-"3","Broadland","E07000144","Midlands and East","East of England",2,131931,11.817,264,15.1594394039308
-"4","Ryedale","E07000167","North","Yorkshire and The Humber",1,55629,15.665,200,17.976235416779
-"5","Mid Suffolk","E07000203","Midlands and East","East of England",2,104857,13.225,237,19.0735954681137
-"6","South Norfolk","E07000149","Midlands and East","East of England",3,143066,13.318,235,20.969342820796
-"7","Rutland","E06000017","Midlands and East","East Midlands",1,40476,8.381,303,24.7059986164641
-"8","South Staffordshire","E07000196","Midlands and East","West Midlands",3,112369,13.124,239,26.6977547188281
-"9","Stafford","E07000197","Midlands and East","West Midlands",4,137858,13.678,230,29.0153636350448
-"10","Bromsgrove","E07000234","Midlands and East","West Midlands",3,100569,11.697,268,29.8302657876682
-"11","Maldon","E07000074","Midlands and East","East of England",2,65401,14.169,222,30.5805721625052
-"12","Harborough","E07000131","Midlands and East","East Midlands",3,95537,8.015,309,31.4014465599715
-"13","Test Valley","E07000093","South","South East",4,127163,11.931,261,31.4556907276488
-"14","Uttlesford","E07000077","Midlands and East","East of England",3,92759,9.258,297,32.3418751819231
-"15","Chichester","E07000225","South","South East",4,121508,14.085,225,32.9196431510682
-"16","Rushcliffe","E07000176","Midlands and East","East Midlands",4,121416,7.18,314,32.9445872043223
-"17","Stroud","E07000082","South","South West",4,120903,10.797,280,33.0843734233228
-"18","Cotswold","E07000079","South","South West",3,90264,11.061,277,33.2358415315076
-"19","East Cambridgeshire","E07000009","Midlands and East","East of England",3,90172,11.507,272,33.2697511422615
-"20","St Albans","E07000240","Midlands and East","East of England",5,149317,8.339,306,33.4858053671049
-"21","North Kesteven","E07000139","Midlands and East","East Midlands",4,118149,11.553,271,33.8555552734259
-"22","Horsham","E07000227","South","South East",5,145474,9.89,290,34.3704029586043
-"23","Forest of Dean","E07000080","South","South West",3,87107,18.013,163,34.4404008862663
-"24","Wokingham","E06000041","South","South East",6,173945,5.846,316,34.4936617896462
-"25","South Oxfordshire","E07000179","South","South East",5,143782,8.459,302,34.7748675077548
-"26","Melton","E07000133","Midlands and East","East Midlands",2,51394,12.532,249,38.9150484492353
-"27","North East Derbyshire","E07000038","Midlands and East","East Midlands",4,102216,17.399,170,39.1328167801518
-"28","Blaby","E07000129","Midlands and East","East Midlands",4,101950,10.629,282,39.2349190779794
-"29","Mid Sussex","E07000228","South","South East",6,152142,7.747,311,39.4368418977008
-"30","Winchester","E07000094","South","South East",5,125925,9.615,292,39.7061743101052
-"31","Derbyshire Dales","E07000035","Midlands and East","East Midlands",3,72422,11.895,263,41.4238767225429
-"32","Fareham","E07000087","South","South East",5,116338,9.019,298,42.9782186387939
-"33","Torridge","E07000046","South","South West",3,68719,23.269,99,43.656048545526
-"34","Teignbridge","E07000045","South","South West",6,135039,15.893,194,44.431608646391
-"35","Stratford-on-Avon","E07000221","Midlands and East","West Midlands",6,132402,11.728,266,45.3165360039879
-"36","South Hams","E07000044","South","South West",4,87946,13.724,229,45.4824551429286
-"37","Mole Valley","E07000210","South","South East",4,87547,9.511,293,45.6897437947617
-"38","East Devon","E07000040","South","South West",7,148080,12.764,244,47.2717450027012
-"39","Lichfield","E07000194","Midlands and East","West Midlands",5,105637,12.566,247,47.3319007544705
-"40","South Lakeland","E07000031","North","North West",5,104905,12.501,250,47.6621705352462
-"41","Mid Devon","E07000042","South","South West",4,83290,16.928,176,48.0249729859527
-"42","Ribble Valley","E07000124","North","North West",3,62026,10.594,283,48.3668139167446
-"43","Newark and Sherwood","E07000175","Midlands and East","East Midlands",6,123127,19.227,145,48.7301729108969
-"44","Chorley","E07000118","North","North West",6,118870,16.863,177,50.4753091612686
-"45","Cornwall","E06000052","South","South West",29,573299,23.072,101,50.5844245323993
-"46","Vale of White Horse","E07000180","South","South East",7,137910,8.358,305,50.7577405554347
-"47","North Devon","E07000043","South","South West",5,98170,20.559,132,50.932056636447
-"48","West Lindsey","E07000142","Midlands and East","East Midlands",5,96186,20.355,136,51.9826170128709
-"49","Shropshire","E06000051","Midlands and East","West Midlands",17,325415,17.153,174,52.2409845889095
-"50","Guildford","E07000209","South","South East",8,150352,9.395,296,53.2084707885495
-"51","Wiltshire","E06000054","South","South West",27,504070,13.447,233,53.5639891284941
-"52","Babergh","E07000200","Midlands and East","East of England",5,92735,14.267,218,53.9170755378228
-"53","High Peak","E07000037","Midlands and East","East Midlands",5,92633,15.642,201,53.9764446795418
-"54","Central Bedfordshire","E06000056","Midlands and East","East of England",16,294096,12.152,254,54.4040041347043
-"55","South Derbyshire","E07000039","Midlands and East","East Midlands",6,109516,14.494,215,54.7865152123891
-"56","Dorset","E06000059","South","South West",21,379791,15.735,199,55.2935693578837
-"57","Wealden","E07000065","South","South East",9,162733,12.311,252,55.3053160698813
-"58","Harrogate","E07000165","North","Yorkshire and The Humber",9,161545,10.897,278,55.7120307035191
-"59","Colchester","E07000071","Midlands and East","East of England",11,197200,16.778,181,55.7809330628803
-"60","Eden","E07000030","North","North West",3,53754,16.328,186,55.8098002009153
-"61","Richmondshire","E07000166","North","Yorkshire and The Humber",3,53732,12.135,256,55.8326509342664
-"62","South Kesteven","E07000141","Midlands and East","East Midlands",8,143225,13.499,231,55.8561703613196
-"63","East Suffolk","E07000244","Midlands and East","East of England",14,250373,19.56,143,55.916572473869
-"64","Rossendale","E07000125","North","North West",4,71432,24.062,92,55.9973121290178
-"65","East Hampshire","E07000085","South","South East",7,123838,10.284,285,56.5254606825046
-"66","Breckland","E07000143","Midlands and East","East of England",8,141255,19.614,142,56.6351633570493
-"67","Rochford","E07000075","Midlands and East","East of England",5,87627,10.449,284,57.0600385725861
-"68","Harlow","E07000073","Midlands and East","East of England",5,87280,21.413,124,57.2868927589368
-"69","Lewes","E07000063","South","South East",6,103525,15.758,198,57.9570152137165
-"70","South Somerset","E07000189","South","South West",10,168696,17.347,172,59.2782282923128
-"71","East Hertfordshire","E07000242","Midlands and East","East of England",9,151786,8.188,307,59.2940060348122
-"72","King's Lynn and West Norfolk","E07000146","Midlands and East","East of England",9,151245,23.72,94,59.506099375186
-"73","Swale","E07000113","South","South East",9,151015,27.076,56,59.5967288017747
-"74","Mendip","E07000187","South","South West",7,116288,16.6,184,60.1953769950468
-"75","Wychavon","E07000238","Midlands and East","West Midlands",8,131084,15.766,197,61.0295688260962
-"76","Tendring","E07000076","Midlands and East","East of England",9,147353,30.484,36,61.077819929014
-"77","Bath and North East Somerset","E06000022","South","South West",12,196357,11.745,265,61.1131765101321
-"78","North Warwickshire","E07000218","Midlands and East","West Midlands",4,65452,17.907,167,61.1134877467457
-"79","Kirklees","E08000034","North","Yorkshire and The Humber",27,441290,25.151,83,61.1842552516486
-"80","Dartford","E07000107","South","South East",7,114051,18.812,154,61.3760510648745
-"81","Huntingdonshire","E07000011","Midlands and East","East of England",11,178985,12.55,248,61.4576640500601
-"82","Hart","E07000089","South","South East",6,97608,5.544,317,61.4703712810425
-"83","Hinckley and Bosworth","E07000132","Midlands and East","East Midlands",7,113666,13.461,232,61.5839389087326
-"84","Folkestone and Hythe","E07000112","South","South East",7,113320,24.149,90,61.7719731733145
-"85","South Holland","E07000140","Midlands and East","East Midlands",6,95857,17.896,168,62.5932378438716
-"86","West Berkshire","E06000037","South","South East",10,158465,9.952,289,63.105417600101
-"87","Waverley","E07000216","South","South East",8,126556,7.494,313,63.213123044344
-"88","Basildon","E07000066","Midlands and East","East of England",12,187558,23.243,100,63.980208788748
-"89","Somerset West and Taunton","E07000246","South","South West",10,155421,19.142,146,64.3413695703927
-"90","Bracknell Forest","E06000036","South","South East",8,124165,10.241,286,64.4303950388596
-"91","Sevenoaks","E07000111","South","South East",8,121387,12.437,251,65.9049156828985
-"92","South Gloucestershire","E06000025","South","South West",19,287816,11.66,269,66.0143980876671
-"93","Eastleigh","E07000086","South","South East",9,135520,10.192,287,66.4108618654073
-"94","North Norfolk","E07000147","Midlands and East","East of England",7,105167,21.058,127,66.5608032938089
-"95","New Forest","E07000091","South","South East",12,179649,13.015,240,66.7969206619575
-"96","Warrington","E06000007","North","North West",14,209397,18.942,148,66.8586464944579
-"97","Reigate and Banstead","E07000211","South","South East",10,149243,11.276,275,67.0048176463888
-"98","Cheshire East","E06000049","North","North West",26,386667,14.475,216,67.2413213436885
-"99","Tunbridge Wells","E07000116","South","South East",8,118939,11.31,274,67.261369273325
-"100","Tandridge","E07000215","South","South East",6,88542,11.896,262,67.7644507691265
-"101","Tonbridge and Malling","E07000115","South","South East",9,132571,13.333,234,67.8881505004865
-"102","Ashford","E07000105","South","South East",9,131018,18.546,158,68.6928513639347
-"103","Solihull","E08000029","Midlands and East","West Midlands",15,217487,17.37,171,68.9696395646636
-"104","Charnwood","E07000130","Midlands and East","East Midlands",13,188416,13.238,236,68.9962635869565
-"105","Maidstone","E07000110","South","South East",12,173132,16.503,185,69.3112769447589
-"106","Erewash","E07000036","Midlands and East","East Midlands",8,115332,18.818,153,69.3649637568064
-"107","Craven","E07000163","North","Yorkshire and The Humber",4,57338,12.76,245,69.7617635773832
-"108","Amber Valley","E07000032","Midlands and East","East Midlands",9,128829,17.97,166,69.8600470390983
-"109","Redditch","E07000236","Midlands and East","West Midlands",6,85568,22.524,107,70.1196709050112
-"110","Ashfield","E07000170","Midlands and East","East Midlands",9,128337,26.308,68,70.1278664765422
-"111","Isle of Wight","E06000046","South","South East",10,142296,23.294,98,70.2760443020183
-"112","Gosport","E07000088","South","South East",6,84679,20.541,133,70.8558202151655
-"113","Staffordshire Moorlands","E07000198","Midlands and East","West Midlands",7,98427,15.04,206,71.118697105469
-"114","West Devon","E07000047","South","South West",4,56139,18.052,162,71.25171449438
-"115","Dudley","E08000027","Midlands and East","West Midlands",23,322363,24.103,91,71.3481385891061
-"116","West Oxfordshire","E07000181","South","South East",8,111758,8.684,300,71.5832423629628
-"117","Rugby","E07000220","Midlands and East","West Midlands",8,110650,14.119,224,72.3000451875283
-"118","Herefordshire, County of","E06000019","Midlands and East","West Midlands",14,193615,18.89,152,72.3084471760969
-"119","Tewkesbury","E07000083","South","South West",7,96624,12.142,255,72.4457691670806
-"120","Elmbridge","E07000207","South","South East",10,137215,7.944,310,72.8783296286849
-"121","Basingstoke and Deane","E07000084","South","South East",13,177760,12.823,243,73.1323132313231
-"122","Bolsover","E07000033","Midlands and East","East Midlands",6,81305,25.047,84,73.796199495726
-"123","North Somerset","E06000024","South","South West",16,215574,15.825,196,74.2204533014185
-"124","Three Rivers","E07000102","Midlands and East","East of England",7,93966,9.871,291,74.4950301172765
-"125","Gravesham","E07000109","South","South East",8,106890,21.414,123,74.8432968472261
-"126","Exeter","E07000041","South","South West",10,133333,16.215,189,75.0001875004687
-"127","Warwick","E07000222","Midlands and East","West Midlands",11,144909,12.005,259,75.9097088517621
-"128","Dover","E07000108","South","South East",9,118514,22.161,113,75.940395227568
-"129","North West Leicestershire","E07000134","Midlands and East","East Midlands",8,104809,14.573,214,76.3293228634945
-"130","Selby","E07000169","North","Yorkshire and The Humber",7,91697,12.73,246,76.3383753012639
-"131","Dacorum","E07000096","Midlands and East","East of England",12,155457,13.004,241,77.1917636388197
-"132","Castle Point","E07000069","Midlands and East","East of England",7,90524,16.842,178,77.3275595422209
-"133","Adur","E07000223","South","South East",5,64187,17.594,169,77.8973935532117
-"134","Canterbury","E07000106","South","South East",13,166762,16.798,179,77.9554095057627
-"135","Chelmsford","E07000070","Midlands and East","East of England",14,179549,12.221,253,77.9731438214638
-"136","Tamworth","E07000199","Midlands and East","West Midlands",6,76864,21.061,126,78.059950041632
-"137","Braintree","E07000067","Midlands and East","East of England",12,153091,14.723,211,78.3847515529979
-"138","Broxtowe","E07000172","Midlands and East","East Midlands",9,114627,14.238,220,78.5155329896098
-"139","Knowsley","E08000011","North","North West",12,152452,43.006,2,78.7132999239105
-"140","Brighton and Hove","E06000043","South","South East",23,291738,20.761,131,78.8378613687624
-"141","Thurrock","E06000034","Midlands and East","East of England",14,175531,20.928,128,79.7579914658949
-"142","Oldham","E08000004","North","North West",19,237628,33.155,19,79.9569074351507
-"143","Calderdale","E08000033","North","Yorkshire and The Humber",17,211439,26.351,66,80.4014396587195
-"144","York","E06000014","North","Yorkshire and The Humber",17,211012,11.727,267,80.5641385324057
-"145","Bristol, City of","E06000023","South","South West",38,465866,26.363,65,81.5685197030906
-"146","East Riding of Yorkshire","E06000011","North","Yorkshire and The Humber",28,343201,15.605,202,81.584843867005
-"147","Sutton","E09000029","London","London",17,207707,13.987,226,81.8460620007992
-"148","Mansfield","E07000174","Midlands and East","East Midlands",9,109351,28.503,46,82.303774085285
-"149","Medway","E06000035","South","South East",23,279142,23.936,93,82.3953400061617
-"150","Rother","E07000064","South","South East",8,96716,19.768,139,82.7164067992886
-"151","Wirral","E08000015","North","North West",27,324336,29.589,42,83.2470031078881
-"152","Thanet","E07000114","South","South East",12,141458,31.314,30,84.8308331801666
-"153","Cherwell","E07000177","South","South East",13,151846,14.41,217,85.6130553323762
-"154","Richmond upon Thames","E09000027","London","London",17,198141,9.425,295,85.7974876476852
-"155","Hastings","E07000062","South","South East",8,92554,34.281,17,86.4360265358602
-"156","Cheshire West and Chester","E06000050","North","North West",30,343823,18.083,161,87.2541976540255
-"157","West Lancashire","E07000127","North","North West",10,114496,18.645,155,87.3392956959195
-"158","Cannock Chase","E07000192","Midlands and East","West Midlands",9,101484,20.426,134,88.6839304717985
-"159","Welwyn Hatfield","E07000241","Midlands and East","East of England",11,123893,14.215,221,88.7862913966084
-"160","Wyre Forest","E07000239","Midlands and East","West Midlands",9,101139,22.437,109,88.9864443983033
-"161","Sedgemoor","E07000188","South","South West",11,123446,21.306,125,89.107788020673
-"162","Worcester","E07000237","Midlands and East","West Midlands",9,100265,20.414,135,89.7621303545604
-"163","Brentwood","E07000068","Midlands and East","East of England",7,77242,10.007,288,90.6242717692447
-"164","Walsall","E08000030","Midlands and East","West Midlands",26,286716,31.555,25,90.6820686672526
-"165","Wolverhampton","E08000031","Midlands and East","West Midlands",24,264407,32.102,24,90.7691551282682
-"166","Epping Forest","E07000072","Midlands and East","East of England",12,132175,15.068,205,90.7887270663893
-"167","Stevenage","E07000243","Midlands and East","East of England",8,88104,19.695,140,90.8017797148824
-"168","Wandsworth","E09000032","London","London",30,329735,16.611,183,90.9821523344504
-"169","East Lindsey","E07000137","Midlands and East","East Midlands",13,142030,29.892,39,91.5299584594804
-"170","Allerdale","E07000026","North","North West",9,97831,22.938,104,91.9953797875929
-"171","Milton Keynes","E06000042","South","South East",25,270203,17.98,165,92.5230289819136
-"172","Newcastle-under-Lyme","E07000195","Midlands and East","West Midlands",12,129610,18.929,151,92.5854486536533
-"173","Trafford","E08000009","North","North West",22,237579,16.088,191,92.6007770047016
-"174","North Lincolnshire","E06000013","North","Yorkshire and The Humber",16,172748,22.096,115,92.6204644916294
-"175","Gedling","E07000173","Midlands and East","East Midlands",11,118239,14.894,209,93.0319099451112
-"176","Telford and Wrekin","E06000020","Midlands and East","West Midlands",17,181322,24.988,86,93.7558597412338
-"177","Cheltenham","E07000078","South","South West",11,116043,14.26,219,94.7924476271727
-"178","Havant","E07000090","South","South East",12,126339,21.806,119,94.9825469569967
-"179","Chesterfield","E07000034","Midlands and East","East Midlands",10,104930,24.926,87,95.3016296578672
-"180","Torbay","E06000027","South","South West",13,136218,28.104,48,95.4352581890793
-"181","Northumberland","E06000057","North","North East",31,323820,22.079,116,95.7321968995121
-"182","Lambeth","E09000022","London","London",31,321813,25.422,81,96.3292346797675
-"183","Wyre","E07000128","North","North West",11,113067,20.858,129,97.2874490346432
-"184","Bedford","E06000055","Midlands and East","East of England",17,174687,18.932,150,97.3169153972534
-"185","North Hertfordshire","E07000099","Midlands and East","East of England",13,133463,11.627,270,97.4052733716461
-"186","Stoke-on-Trent","E06000021","Midlands and East","West Midlands",25,256622,34.504,14,97.419550934838
-"187","Coventry","E08000026","Midlands and East","West Midlands",37,379387,25.613,78,97.525745478891
-"188","Leeds","E08000035","North","Yorkshire and The Humber",78,798786,27.301,55,97.6481811148418
-"189","Pendle","E07000122","North","North West",9,92145,30.723,33,97.6721471593684
-"190","Crawley","E07000226","South","South East",11,112474,18.94,149,97.8003805323897
-"191","Hambleton","E07000164","North","Yorkshire and The Humber",9,91932,11.987,260,97.8984466779794
-"192","Rotherham","E08000018","North","Yorkshire and The Humber",26,264984,29.55,44,98.1191317211605
-"193","Fylde","E07000119","North","North West",8,81211,15.875,195,98.5088226964327
-"194","Epsom and Ewell","E07000208","South","South East",8,81003,8.833,299,98.7617742552745
-"195","South Ribble","E07000126","North","North West",11,111086,15.33,204,99.022379057667
-"196","Windsor and Maidenhead","E06000040","South","South East",15,151273,8.376,304,99.1584750748647
-"197","Arun","E07000224","South","South East",16,161123,18.638,156,99.3030169497837
-"198","Bradford","E08000032","North","Yorkshire and The Humber",54,542128,34.666,13,99.6074727739574
-"199","Runnymede","E07000212","South","South East",9,90327,12.012,257,99.6379819987379
-"200","Nuneaton and Bedworth","E07000219","Midlands and East","West Midlands",13,130373,23.54,96,99.7138978162656
-"201","Kingston upon Thames","E09000021","London","London",18,179142,11.381,273,100.478949660046
-"202","Islington","E09000019","London","London",25,248115,27.535,53,100.759728351772
-"203","Scarborough","E07000168","North","Yorkshire and The Humber",11,108737,26.28,69,101.161518158493
-"204","Merton","E09000024","London","London",21,206453,14.649,213,101.71806658174
-"205","Stockport","E08000007","North","North West",30,294197,20.826,130,101.972487822785
-"206","Bromley","E09000006","London","London",34,332752,14.163,223,102.17819877867
-"207","Wakefield","E08000036","North","Yorkshire and The Humber",36,351592,27.306,54,102.391408223168
-"208","Plymouth","E06000026","South","South West",27,262839,26.619,64,102.724481526714
-"209","Swindon","E06000030","South","South West",23,222881,18.622,157,103.194081146441
-"210","Sheffield","E08000019","North","Yorkshire and The Humber",61,589214,27.06,57,103.52775052867
-"211","Eastbourne","E07000061","South","South East",11,103324,22.11,114,106.461228756146
-"212","Camden","E09000007","London","London",30,279516,20.131,138,107.328381917314
-"213","Luton","E06000032","Midlands and East","East of England",23,213528,25.908,70,107.714210782661
-"214","Bexley","E09000004","London","London",27,249301,16.273,187,108.302814669817
-"215","Worthing","E07000229","South","South East",12,110727,17.012,175,108.374651169092
-"216","County Durham","E06000047","North","North East",58,533149,26.793,62,108.787599714151
-"217","Woking","E07000217","South","South East",11,100008,10.804,279,109.991200703944
-"218","Tameside","E08000008","North","North West",25,227117,31.374,28,110.075423680306
-"219","Carlisle","E07000028","North","North West",12,108524,21.997,117,110.574619439018
-"220","Bolton","E08000001","North","North West",32,288248,30.691,34,111.01551441814
-"221","Burnley","E07000117","North","North West",10,89344,37.793,8,111.926934097421
-"222","South Tyneside","E08000023","North","North East",17,151133,31.509,27,112.483706404293
-"223","Derby","E06000015","Midlands and East","East Midlands",29,256814,26.323,67,112.92219271535
-"224","Blackburn with Darwen","E06000008","North","North West",17,150030,36.013,9,113.310671199094
-"225","Kensington and Chelsea","E09000020","London","London",18,156864,21.526,121,114.749082007344
-"226","Lancaster","E07000121","North","North West",17,148119,24.165,89,114.772581505411
-"227","North Tyneside","E08000022","North","North East",24,208871,22.279,111,114.903457157767
-"228","Wigan","E08000010","North","North West",38,330712,25.713,75,114.903601925542
-"229","East Staffordshire","E07000193","Midlands and East","West Midlands",14,120923,19.028,147,115.77615507389
-"230","Bournemouth, Christchurch and Poole","E06000058","South","South West",46,396989,18.173,160,115.872228197759
-"231","Birmingham","E08000025","Midlands and East","West Midlands",134,1140525,38.067,7,117.489752526249
-"232","Fenland","E07000010","Midlands and East","East of England",12,102080,25.426,80,117.554858934169
-"233","Bassetlaw","E07000171","Midlands and East","East Midlands",14,118280,22.588,106,118.363205951978
-"234","Southampton","E06000045","South","South East",30,252872,26.876,61,118.637097029327
-"235","Oxford","E07000178","South","South East",18,151584,16.707,182,118.746041798607
-"236","Newcastle upon Tyne","E08000021","North","North East",37,306824,29.79,41,120.590305843089
-"237","Oadby and Wigston","E07000135","Midlands and East","East Midlands",7,57313,12.958,242,122.136339050477
-"238","Surrey Heath","E07000214","South","South East",11,89204,8.066,308,123.312855925743
-"239","Peterborough","E06000031","Midlands and East","East of England",25,202626,27.821,51,123.380020333027
-"240","Nottingham","E06000018","Midlands and East","East Midlands",42,337098,34.891,11,124.592848370504
-"241","Rochdale","E08000005","North","North West",28,223659,34.415,15,125.190580303051
-"242","Salford","E08000006","North","North West",33,262697,34.21,18,125.620010887068
-"243","Portsmouth","E06000044","South","South East",27,214692,26.899,59,125.761556089654
-"244","Southend-on-Sea","E06000033","Midlands and East","East of England",23,182773,22.375,110,125.839155673978
-"245","Croydon","E09000008","London","London",49,388563,22.477,108,126.105676556955
-"246","Barnsley","E08000016","North","Yorkshire and The Humber",32,248071,29.933,38,128.995327950466
-"247","West Suffolk","E07000245","Midlands and East","East of England",23,177302,16.245,188,129.722168954665
-"248","Spelthorne","E07000213","South","South East",13,99873,14.943,208,130.165309943628
-"249","Halton","E06000006","North","North West",17,129759,32.325,23,131.012107060011
-"250","Gloucester","E07000081","South","South West",17,129709,21.807,118,131.062609379457
-"251","Bury","E08000002","North","North West",25,190708,23.682,95,131.090462906643
-"252","Hillingdon","E09000017","London","London",41,309014,18.223,159,132.680072747513
-"253","Hertsmere","E07000098","Midlands and East","East of England",14,105471,13.938,227,132.737908998682
-"254","Broxbourne","E07000095","Midlands and East","East of England",13,97592,17.989,164,133.207639970489
-"255","Sandwell","E08000028","Midlands and East","West Midlands",44,329042,34.884,12,133.721530989965
-"256","Watford","E07000103","Midlands and East","East of England",13,96623,15.41,203,134.543535183134
-"257","Hackney","E09000012","London","London",38,280941,32.526,22,135.259716452921
-"258","Ealing","E09000009","London","London",47,340341,22.71,105,138.096791159455
-"259","Preston","E07000123","North","North West",20,144147,29.531,45,138.747251070088
-"260","Kingston upon Hull, City of","E06000010","North","Yorkshire and The Humber",36,259126,40.564,4,138.928552132939
-"261","Lincoln","E07000138","Midlands and East","East Midlands",14,100049,26.889,60,139.931433597537
-"262","Barnet","E09000003","London","London",56,399007,16.148,190,140.348414940089
-"263","Boston","E07000136","Midlands and East","East Midlands",10,70837,22.967,102,141.169163008033
-"264","Greenwich","E09000011","London","London",41,289034,24.464,88,141.851823660884
-"265","Manchester","E08000003","North","North West",79,555741,40.005,6,142.152549478984
-"266","Cambridge","E07000008","Midlands and East","East of England",18,125063,14.855,210,143.927460559878
-"267","Leicester","E06000016","Midlands and East","East Midlands",51,354036,30.877,32,144.053147137579
-"268","Stockton-on-Tees","E06000004","North","North East",29,197419,25.79,73,146.8956888648
-"269","Copeland","E07000029","North","North West",10,68041,25.012,85,146.970209138608
-"270","Doncaster","E08000017","North","Yorkshire and The Humber",46,312785,30.289,37,147.06587592116
-"271","Rushmoor","E07000092","South","South East",14,94387,15.903,193,148.325510928412
-"272","Southwark","E09000028","London","London",48,320017,25.811,72,149.992031673317
-"273","Redcar and Cleveland","E06000003","North","North East",21,137228,29.792,40,153.0299938788
-"274","Redbridge","E09000026","London","London",47,305658,17.203,173,153.766628061428
-"275","St. Helens","E08000013","North","North West",28,181095,31.518,26,154.614981087275
-"276","Sunderland","E08000024","North","North East",43,277846,30.586,35,154.761990455144
-"277","Tower Hamlets","E09000030","London","London",52,331969,27.913,50,156.641132153906
-"278","North East Lincolnshire","E06000012","North","Yorkshire and The Humber",25,159364,31.335,29,156.873572450491
-"279","Havering","E09000016","London","London",41,260651,16.789,180,157.298456556852
-"280","Hammersmith and Fulham","E09000013","London","London",29,183544,22.27,112,158.000261517674
-"281","Darlington","E06000005","North","North East",17,107402,25.657,77,158.283830841139
-"282","Hartlepool","E06000001","North","North East",15,93836,35.037,10,159.853361183341
-"283","Hyndburn","E07000120","North","North West",13,81133,34.333,16,160.230732254446
-"284","Slough","E06000039","South","South East",24,149577,22.965,103,160.45247598227
-"285","Great Yarmouth","E07000145","Midlands and East","East of England",16,99198,33.097,20,161.293574467227
-"286","Waltham Forest","E09000031","London","London",45,276940,25.209,82,162.490070051275
-"287","Lewisham","E09000023","London","London",50,305309,26.661,63,163.768509935836
-"288","Gateshead","E08000037","North","North East",34,201950,28.217,47,168.358504580342
-"289","Reading","E06000038","South","South East",27,160337,19.619,141,168.395317362805
-"290","Norwich","E07000148","Midlands and East","East of England",24,142177,27.599,52,168.80367429331
-"291","Newham","E09000025","London","London",60,355266,29.577,43,168.887537788587
-"292","Harrow","E09000015","London","London",44,252338,15.031,207,174.369298322092
-"293","Ipswich","E07000202","Midlands and East","East of England",24,135979,25.89,71,176.497841578479
-"294","Sefton","E08000014","North","North West",49,275899,27.035,58,177.601223636186
-"295","Barking and Dagenham","E09000002","London","London",40,214107,32.768,21,186.822476612161
-"296","Hounslow","E09000018","London","London",51,271767,21.487,122,187.66075351312
-"297","Haringey","E09000014","London","London",50,266357,27.956,49,187.717987512999
-"298","Barrow-in-Furness","E07000027","North","North West",13,66726,31.117,31,194.826604322153
-"299","Westminster","E09000033","London","London",53,269848,20.339,137,196.406866087575
-"300","Enfield","E09000010","London","London",67,333587,25.781,74,200.847155314805
-"301","Blackpool","E06000009","North","North West",28,138381,45.039,1,202.339916607049
-"302","Middlesbrough","E06000002","North","North East",29,141285,40.46,5,205.25887390735
-"303","Brent","E09000005","London","London",71,327753,25.558,79,216.626544989672
-"304","Liverpool","E08000012","North","North West",120,500474,42.412,3,239.772695484681
-"305","City of London","E09000001","London","London",23,10938,14.72,212,2102.76101663924
-"306",NA,"E06000053",NA,NA,NA,NA,12.005,258,NA
-"307",NA,"E07000004",NA,NA,NA,NA,11.183,276,NA
-"308",NA,"E07000005",NA,NA,NA,NA,6.952,315,NA
-"309",NA,"E07000006",NA,NA,NA,NA,9.481,294,NA
-"310",NA,"E07000007",NA,NA,NA,NA,10.742,281,NA
-"311",NA,"E07000150",NA,NA,NA,NA,25.706,76,NA
-"312",NA,"E07000151",NA,NA,NA,NA,13.184,238,NA
-"313",NA,"E07000152",NA,NA,NA,NA,13.897,228,NA
-"314",NA,"E07000153",NA,NA,NA,NA,19.23,144,NA
-"315",NA,"E07000154",NA,NA,NA,NA,23.358,97,NA
-"316",NA,"E07000155",NA,NA,NA,NA,7.652,312,NA
-"317",NA,"E07000156",NA,NA,NA,NA,21.676,120,NA
+area_name,area_code,region_name,region,n_bookies,population,deprivation,imd_rank,bookies_per_million
+South Cambridgeshire,E07000012,Midlands and East,East of England,1,160904,8.496,301,6.214885894694973
+Malvern Hills,E07000235,Midlands and East,West Midlands,1,79445,16.066,192,12.587324564163886
+Broadland,E07000144,Midlands and East,East of England,2,131931,11.817,264,15.159439403930843
+Ryedale,E07000167,North,Yorkshire and The Humber,1,55629,15.665,200,17.97623541677902
+Mid Suffolk,E07000203,Midlands and East,East of England,2,104857,13.225,237,19.073595468113716
+South Norfolk,E07000149,Midlands and East,East of England,3,143066,13.318,235,20.969342820795998
+Rutland,E06000017,Midlands and East,East Midlands,1,40476,8.381,303,24.70599861646408
+South Staffordshire,E07000196,Midlands and East,West Midlands,3,112369,13.124,239,26.697754718828147
+Stafford,E07000197,Midlands and East,West Midlands,4,137858,13.678,230,29.015363635044757
+Bromsgrove,E07000234,Midlands and East,West Midlands,3,100569,11.697,268,29.830265787668168
+Maldon,E07000074,Midlands and East,East of England,2,65401,14.169,222,30.580572162505163
+Harborough,E07000131,Midlands and East,East Midlands,3,95537,8.015,309,31.40144655997153
+Test Valley,E07000093,South,South East,4,127163,11.931,261,31.455690727648765
+Uttlesford,E07000077,Midlands and East,East of England,3,92759,9.258,297,32.34187518192305
+Chichester,E07000225,South,South East,4,121508,14.085,225,32.91964315106824
+Rushcliffe,E07000176,Midlands and East,East Midlands,4,121416,7.18,314,32.94458720432233
+Stroud,E07000082,South,South West,4,120903,10.797,280,33.08437342332282
+Cotswold,E07000079,South,South West,3,90264,11.061,277,33.23584153150758
+East Cambridgeshire,E07000009,Midlands and East,East of England,3,90172,11.507,272,33.269751142261455
+St Albans,E07000240,Midlands and East,East of England,5,149317,8.339,306,33.48580536710488
+North Kesteven,E07000139,Midlands and East,East Midlands,4,118149,11.553,271,33.85555527342593
+Horsham,E07000227,South,South East,5,145474,9.89,290,34.37040295860429
+Forest of Dean,E07000080,South,South West,3,87107,18.013,163,34.44040088626632
+Wokingham,E06000041,South,South East,6,173945,5.846,316,34.493661789646154
+South Oxfordshire,E07000179,South,South East,5,143782,8.459,302,34.7748675077548
+Melton,E07000133,Midlands and East,East Midlands,2,51394,12.532,249,38.91504844923532
+North East Derbyshire,E07000038,Midlands and East,East Midlands,4,102216,17.399,170,39.13281678015184
+Blaby,E07000129,Midlands and East,East Midlands,4,101950,10.629,282,39.234919077979406
+Mid Sussex,E07000228,South,South East,6,152142,7.747,311,39.43684189770083
+Winchester,E07000094,South,South East,5,125925,9.615,292,39.70617431010522
+Derbyshire Dales,E07000035,Midlands and East,East Midlands,3,72422,11.895,263,41.42387672254287
+Fareham,E07000087,South,South East,5,116338,9.019,298,42.978218638793855
+Torridge,E07000046,South,South West,3,68719,23.269,99,43.656048545525984
+Teignbridge,E07000045,South,South West,6,135039,15.893,194,44.43160864639104
+Stratford-on-Avon,E07000221,Midlands and East,West Midlands,6,132402,11.728,266,45.316536003987856
+South Hams,E07000044,South,South West,4,87946,13.724,229,45.482455142928615
+Mole Valley,E07000210,South,South East,4,87547,9.511,293,45.68974379476167
+East Devon,E07000040,South,South West,7,148080,12.764,244,47.271745002701245
+Lichfield,E07000194,Midlands and East,West Midlands,5,105637,12.566,247,47.3319007544705
+South Lakeland,E07000031,North,North West,5,104905,12.501,250,47.662170535246176
+Mid Devon,E07000042,South,South West,4,83290,16.928,176,48.0249729859527
+Ribble Valley,E07000124,North,North West,3,62026,10.594,283,48.3668139167446
+Newark and Sherwood,E07000175,Midlands and East,East Midlands,6,123127,19.227,145,48.73017291089688
+Chorley,E07000118,North,North West,6,118870,16.863,177,50.47530916126861
+Cornwall,E06000052,South,South West,29,573299,23.072,101,50.584424532399325
+Vale of White Horse,E07000180,South,South East,7,137910,8.358,305,50.75774055543471
+North Devon,E07000043,South,South West,5,98170,20.559,132,50.93205663644698
+West Lindsey,E07000142,Midlands and East,East Midlands,5,96186,20.355,136,51.9826170128709
+Shropshire,E06000051,Midlands and East,West Midlands,17,325415,17.153,174,52.24098458890955
+Guildford,E07000209,South,South East,8,150352,9.395,296,53.20847078854954
+Wiltshire,E06000054,South,South West,27,504070,13.447,233,53.56398912849406
+Babergh,E07000200,Midlands and East,East of England,5,92735,14.267,218,53.91707553782283
+High Peak,E07000037,Midlands and East,East Midlands,5,92633,15.642,201,53.97644467954184
+Central Bedfordshire,E06000056,Midlands and East,East of England,16,294096,12.152,254,54.404004134704316
+South Derbyshire,E07000039,Midlands and East,East Midlands,6,109516,14.494,215,54.786515212389055
+Dorset,E06000059,South,South West,21,379791,15.735,199,55.293569357883676
+Wealden,E07000065,South,South East,9,162733,12.311,252,55.30531606988134
+Harrogate,E07000165,North,Yorkshire and The Humber,9,161545,10.897,278,55.71203070351915
+Colchester,E07000071,Midlands and East,East of England,11,197200,16.778,181,55.78093306288033
+Eden,E07000030,North,North West,3,53754,16.328,186,55.809800200915284
+Richmondshire,E07000166,North,Yorkshire and The Humber,3,53732,12.135,256,55.83265093426636
+South Kesteven,E07000141,Midlands and East,East Midlands,8,143225,13.499,231,55.856170361319606
+East Suffolk,E07000244,Midlands and East,East of England,14,250373,19.56,143,55.91657247386899
+Rossendale,E07000125,North,North West,4,71432,24.062,92,55.99731212901781
+East Hampshire,E07000085,South,South East,7,123838,10.284,285,56.52546068250456
+Breckland,E07000143,Midlands and East,East of England,8,141255,19.614,142,56.63516335704931
+Rochford,E07000075,Midlands and East,East of England,5,87627,10.449,284,57.06003857258607
+Harlow,E07000073,Midlands and East,East of England,5,87280,21.413,124,57.28689275893676
+Lewes,E07000063,South,South East,6,103525,15.758,198,57.95701521371649
+South Somerset,E07000189,South,South West,10,168696,17.347,172,59.2782282923128
+East Hertfordshire,E07000242,Midlands and East,East of England,9,151786,8.188,307,59.29400603481217
+King's Lynn and West Norfolk,E07000146,Midlands and East,East of England,9,151245,23.72,94,59.50609937518596
+Swale,E07000113,South,South East,9,151015,27.076,56,59.59672880177466
+Mendip,E07000187,South,South West,7,116288,16.6,184,60.19537699504678
+Wychavon,E07000238,Midlands and East,West Midlands,8,131084,15.766,197,61.029568826096245
+Tendring,E07000076,Midlands and East,East of England,9,147353,30.484,36,61.077819929014005
+Bath and North East Somerset,E06000022,South,South West,12,196357,11.745,265,61.11317651013206
+North Warwickshire,E07000218,Midlands and East,West Midlands,4,65452,17.907,167,61.11348774674571
+Kirklees,E08000034,North,Yorkshire and The Humber,27,441290,25.151,83,61.18425525164858
+Dartford,E07000107,South,South East,7,114051,18.812,154,61.37605106487449
+Huntingdonshire,E07000011,Midlands and East,East of England,11,178985,12.55,248,61.45766405006006
+Hart,E07000089,South,South East,6,97608,5.544,317,61.47037128104254
+Hinckley and Bosworth,E07000132,Midlands and East,East Midlands,7,113666,13.461,232,61.583938908732605
+Folkestone and Hythe,E07000112,South,South East,7,113320,24.149,90,61.77197317331451
+South Holland,E07000140,Midlands and East,East Midlands,6,95857,17.896,168,62.593237843871606
+West Berkshire,E06000037,South,South East,10,158465,9.952,289,63.10541760010097
+Waverley,E07000216,South,South East,8,126556,7.494,313,63.21312304434401
+Basildon,E07000066,Midlands and East,East of England,12,187558,23.243,100,63.980208788748016
+Somerset West and Taunton,E07000246,South,South West,10,155421,19.142,146,64.34136957039269
+Bracknell Forest,E06000036,South,South East,8,124165,10.241,286,64.43039503885959
+Sevenoaks,E07000111,South,South East,8,121387,12.437,251,65.90491568289849
+South Gloucestershire,E06000025,South,South West,19,287816,11.66,269,66.01439808766712
+Eastleigh,E07000086,South,South East,9,135520,10.192,287,66.41086186540733
+North Norfolk,E07000147,Midlands and East,East of England,7,105167,21.058,127,66.5608032938089
+New Forest,E07000091,South,South East,12,179649,13.015,240,66.79692066195749
+Warrington,E06000007,North,North West,14,209397,18.942,148,66.85864649445789
+Reigate and Banstead,E07000211,South,South East,10,149243,11.276,275,67.00481764638877
+Cheshire East,E06000049,North,North West,26,386667,14.475,216,67.2413213436885
+Tunbridge Wells,E07000116,South,South East,8,118939,11.31,274,67.26136927332497
+Tandridge,E07000215,South,South East,6,88542,11.896,262,67.76445076912651
+Tonbridge and Malling,E07000115,South,South East,9,132571,13.333,234,67.88815050048653
+Ashford,E07000105,South,South East,9,131018,18.546,158,68.69285136393472
+Solihull,E08000029,Midlands and East,West Midlands,15,217487,17.37,171,68.96963956466364
+Charnwood,E07000130,Midlands and East,East Midlands,13,188416,13.238,236,68.99626358695652
+Maidstone,E07000110,South,South East,12,173132,16.503,185,69.31127694475892
+Erewash,E07000036,Midlands and East,East Midlands,8,115332,18.818,153,69.36496375680643
+Craven,E07000163,North,Yorkshire and The Humber,4,57338,12.76,245,69.76176357738323
+Amber Valley,E07000032,Midlands and East,East Midlands,9,128829,17.97,166,69.86004703909833
+Redditch,E07000236,Midlands and East,West Midlands,6,85568,22.524,107,70.11967090501122
+Ashfield,E07000170,Midlands and East,East Midlands,9,128337,26.308,68,70.12786647654222
+Isle of Wight,E06000046,South,South East,10,142296,23.294,98,70.27604430201833
+Gosport,E07000088,South,South East,6,84679,20.541,133,70.85582021516551
+Staffordshire Moorlands,E07000198,Midlands and East,West Midlands,7,98427,15.04,206,71.11869710546902
+West Devon,E07000047,South,South West,4,56139,18.052,162,71.25171449438001
+Dudley,E08000027,Midlands and East,West Midlands,23,322363,24.103,91,71.34813858910607
+West Oxfordshire,E07000181,South,South East,8,111758,8.684,300,71.58324236296282
+Rugby,E07000220,Midlands and East,West Midlands,8,110650,14.119,224,72.30004518752826
+"Herefordshire, County of",E06000019,Midlands and East,West Midlands,14,193615,18.89,152,72.30844717609689
+Tewkesbury,E07000083,South,South West,7,96624,12.142,255,72.44576916708064
+Elmbridge,E07000207,South,South East,10,137215,7.944,310,72.87832962868491
+Basingstoke and Deane,E07000084,South,South East,13,177760,12.823,243,73.13231323132312
+Bolsover,E07000033,Midlands and East,East Midlands,6,81305,25.047,84,73.79619949572597
+North Somerset,E06000024,South,South West,16,215574,15.825,196,74.22045330141854
+Three Rivers,E07000102,Midlands and East,East of England,7,93966,9.871,291,74.49503011727647
+Gravesham,E07000109,South,South East,8,106890,21.414,123,74.84329684722613
+Exeter,E07000041,South,South West,10,133333,16.215,189,75.00018750046874
+Warwick,E07000222,Midlands and East,West Midlands,11,144909,12.005,259,75.90970885176213
+Dover,E07000108,South,South East,9,118514,22.161,113,75.94039522756805
+North West Leicestershire,E07000134,Midlands and East,East Midlands,8,104809,14.573,214,76.32932286349454
+Selby,E07000169,North,Yorkshire and The Humber,7,91697,12.73,246,76.33837530126394
+Dacorum,E07000096,Midlands and East,East of England,12,155457,13.004,241,77.19176363881974
+Castle Point,E07000069,Midlands and East,East of England,7,90524,16.842,178,77.32755954222085
+Adur,E07000223,South,South East,5,64187,17.594,169,77.89739355321171
+Canterbury,E07000106,South,South East,13,166762,16.798,179,77.9554095057627
+Chelmsford,E07000070,Midlands and East,East of England,14,179549,12.221,253,77.97314382146378
+Tamworth,E07000199,Midlands and East,West Midlands,6,76864,21.061,126,78.05995004163198
+Braintree,E07000067,Midlands and East,East of England,12,153091,14.723,211,78.3847515529979
+Broxtowe,E07000172,Midlands and East,East Midlands,9,114627,14.238,220,78.51553298960978
+Knowsley,E08000011,North,North West,12,152452,43.006,2,78.71329992391047
+Brighton and Hove,E06000043,South,South East,23,291738,20.761,131,78.83786136876239
+Thurrock,E06000034,Midlands and East,East of England,14,175531,20.928,128,79.75799146589492
+Oldham,E08000004,North,North West,19,237628,33.155,19,79.95690743515074
+Calderdale,E08000033,North,Yorkshire and The Humber,17,211439,26.351,66,80.40143965871954
+York,E06000014,North,Yorkshire and The Humber,17,211012,11.727,267,80.56413853240575
+"Bristol, City of",E06000023,South,South West,38,465866,26.363,65,81.56851970309059
+East Riding of Yorkshire,E06000011,North,Yorkshire and The Humber,28,343201,15.605,202,81.58484386700505
+Sutton,E09000029,London,London,17,207707,13.987,226,81.84606200079921
+Mansfield,E07000174,Midlands and East,East Midlands,9,109351,28.503,46,82.303774085285
+Medway,E06000035,South,South East,23,279142,23.936,93,82.39534000616173
+Rother,E07000064,South,South East,8,96716,19.768,139,82.71640679928865
+Wirral,E08000015,North,North West,27,324336,29.589,42,83.24700310788812
+Thanet,E07000114,South,South East,12,141458,31.314,30,84.83083318016655
+Cherwell,E07000177,South,South East,13,151846,14.41,217,85.61305533237622
+Richmond upon Thames,E09000027,London,London,17,198141,9.425,295,85.79748764768523
+Hastings,E07000062,South,South East,8,92554,34.281,17,86.43602653586015
+Cheshire West and Chester,E06000050,North,North West,30,343823,18.083,161,87.25419765402548
+West Lancashire,E07000127,North,North West,10,114496,18.645,155,87.3392956959195
+Cannock Chase,E07000192,Midlands and East,West Midlands,9,101484,20.426,134,88.6839304717985
+Welwyn Hatfield,E07000241,Midlands and East,East of England,11,123893,14.215,221,88.78629139660836
+Wyre Forest,E07000239,Midlands and East,West Midlands,9,101139,22.437,109,88.98644439830333
+Sedgemoor,E07000188,South,South West,11,123446,21.306,125,89.10778802067301
+Worcester,E07000237,Midlands and East,West Midlands,9,100265,20.414,135,89.76213035456041
+Brentwood,E07000068,Midlands and East,East of England,7,77242,10.007,288,90.62427176924471
+Walsall,E08000030,Midlands and East,West Midlands,26,286716,31.555,25,90.68206866725261
+Wolverhampton,E08000031,Midlands and East,West Midlands,24,264407,32.102,24,90.76915512826817
+Epping Forest,E07000072,Midlands and East,East of England,12,132175,15.068,205,90.78872706638926
+Stevenage,E07000243,Midlands and East,East of England,8,88104,19.695,140,90.80177971488241
+Wandsworth,E09000032,London,London,30,329735,16.611,183,90.98215233445039
+East Lindsey,E07000137,Midlands and East,East Midlands,13,142030,29.892,39,91.52995845948038
+Allerdale,E07000026,North,North West,9,97831,22.938,104,91.99537978759288
+Milton Keynes,E06000042,South,South East,25,270203,17.98,165,92.5230289819136
+Newcastle-under-Lyme,E07000195,Midlands and East,West Midlands,12,129610,18.929,151,92.58544865365327
+Trafford,E08000009,North,North West,22,237579,16.088,191,92.60077700470158
+North Lincolnshire,E06000013,North,Yorkshire and The Humber,16,172748,22.096,115,92.62046449162942
+Gedling,E07000173,Midlands and East,East Midlands,11,118239,14.894,209,93.03190994511118
+Telford and Wrekin,E06000020,Midlands and East,West Midlands,17,181322,24.988,86,93.75585974123382
+Cheltenham,E07000078,South,South West,11,116043,14.26,219,94.79244762717268
+Havant,E07000090,South,South East,12,126339,21.806,119,94.98254695699666
+Chesterfield,E07000034,Midlands and East,East Midlands,10,104930,24.926,87,95.30162965786715
+Torbay,E06000027,South,South West,13,136218,28.104,48,95.43525818907928
+Northumberland,E06000057,North,North East,31,323820,22.079,116,95.73219689951208
+Lambeth,E09000022,London,London,31,321813,25.422,81,96.32923467976745
+Wyre,E07000128,North,North West,11,113067,20.858,129,97.28744903464317
+Bedford,E06000055,Midlands and East,East of England,17,174687,18.932,150,97.31691539725337
+North Hertfordshire,E07000099,Midlands and East,East of England,13,133463,11.627,270,97.40527337164608
+Stoke-on-Trent,E06000021,Midlands and East,West Midlands,25,256622,34.504,14,97.41955093483801
+Coventry,E08000026,Midlands and East,West Midlands,37,379387,25.613,78,97.52574547889095
+Leeds,E08000035,North,Yorkshire and The Humber,78,798786,27.301,55,97.64818111484178
+Pendle,E07000122,North,North West,9,92145,30.723,33,97.6721471593684
+Crawley,E07000226,South,South East,11,112474,18.94,149,97.80038053238971
+Hambleton,E07000164,North,Yorkshire and The Humber,9,91932,11.987,260,97.89844667797936
+Rotherham,E08000018,North,Yorkshire and The Humber,26,264984,29.55,44,98.11913172116053
+Fylde,E07000119,North,North West,8,81211,15.875,195,98.50882269643274
+Epsom and Ewell,E07000208,South,South East,8,81003,8.833,299,98.76177425527449
+South Ribble,E07000126,North,North West,11,111086,15.33,204,99.02237905766704
+Windsor and Maidenhead,E06000040,South,South East,15,151273,8.376,304,99.15847507486465
+Arun,E07000224,South,South East,16,161123,18.638,156,99.30301694978371
+Bradford,E08000032,North,Yorkshire and The Humber,54,542128,34.666,13,99.60747277395744
+Runnymede,E07000212,South,South East,9,90327,12.012,257,99.63798199873793
+Nuneaton and Bedworth,E07000219,Midlands and East,West Midlands,13,130373,23.54,96,99.71389781626564
+Kingston upon Thames,E09000021,London,London,18,179142,11.381,273,100.47894966004623
+Islington,E09000019,London,London,25,248115,27.535,53,100.75972835177237
+Scarborough,E07000168,North,Yorkshire and The Humber,11,108737,26.28,69,101.16151815849251
+Merton,E09000024,London,London,21,206453,14.649,213,101.71806658174015
+Stockport,E08000007,North,North West,30,294197,20.826,130,101.97248782278541
+Bromley,E09000006,London,London,34,332752,14.163,223,102.17819877867001
+Wakefield,E08000036,North,Yorkshire and The Humber,36,351592,27.306,54,102.39140822316777
+Plymouth,E06000026,South,South West,27,262839,26.619,64,102.72448152671407
+Swindon,E06000030,South,South West,23,222881,18.622,157,103.19408114644138
+Sheffield,E08000019,North,Yorkshire and The Humber,61,589214,27.06,57,103.5277505286704
+Eastbourne,E07000061,South,South East,11,103324,22.11,114,106.46122875614572
+Camden,E09000007,London,London,30,279516,20.131,138,107.32838191731422
+Luton,E06000032,Midlands and East,East of England,23,213528,25.908,70,107.71421078266083
+Bexley,E09000004,London,London,27,249301,16.273,187,108.3028146698168
+Worthing,E07000229,South,South East,12,110727,17.012,175,108.37465116909155
+County Durham,E06000047,North,North East,58,533149,26.793,62,108.7875997141512
+Woking,E07000217,South,South East,11,100008,10.804,279,109.99120070394369
+Tameside,E08000008,North,North West,25,227117,31.374,28,110.07542368030575
+Carlisle,E07000028,North,North West,12,108524,21.997,117,110.5746194390181
+Bolton,E08000001,North,North West,32,288248,30.691,34,111.01551441813994
+Burnley,E07000117,North,North West,10,89344,37.793,8,111.92693409742121
+South Tyneside,E08000023,North,North East,17,151133,31.509,27,112.4837064042929
+Derby,E06000015,Midlands and East,East Midlands,29,256814,26.323,67,112.9221927153504
+Blackburn with Darwen,E06000008,North,North West,17,150030,36.013,9,113.3106711990935
+Kensington and Chelsea,E09000020,London,London,18,156864,21.526,121,114.74908200734394
+Lancaster,E07000121,North,North West,17,148119,24.165,89,114.77258150541118
+North Tyneside,E08000022,North,North East,24,208871,22.279,111,114.90345715776724
+Wigan,E08000010,North,North West,38,330712,25.713,75,114.90360192554247
+East Staffordshire,E07000193,Midlands and East,West Midlands,14,120923,19.028,147,115.77615507389
+"Bournemouth, Christchurch and Poole",E06000058,South,South West,46,396989,18.173,160,115.87222819775863
+Birmingham,E08000025,Midlands and East,West Midlands,134,1140525,38.067,7,117.48975252624888
+Fenland,E07000010,Midlands and East,East of England,12,102080,25.426,80,117.55485893416927
+Bassetlaw,E07000171,Midlands and East,East Midlands,14,118280,22.588,106,118.36320595197834
+Southampton,E06000045,South,South East,30,252872,26.876,61,118.6370970293271
+Oxford,E07000178,South,South East,18,151584,16.707,182,118.74604179860671
+Newcastle upon Tyne,E08000021,North,North East,37,306824,29.79,41,120.5903058430892
+Oadby and Wigston,E07000135,Midlands and East,East Midlands,7,57313,12.958,242,122.13633905047722
+Surrey Heath,E07000214,South,South East,11,89204,8.066,308,123.31285592574325
+Peterborough,E06000031,Midlands and East,East of England,25,202626,27.821,51,123.38002033302736
+Nottingham,E06000018,Midlands and East,East Midlands,42,337098,34.891,11,124.59284837050355
+Rochdale,E08000005,North,North West,28,223659,34.415,15,125.19058030305064
+Salford,E08000006,North,North West,33,262697,34.21,18,125.62001088706762
+Portsmouth,E06000044,South,South East,27,214692,26.899,59,125.76155608965401
+Southend-on-Sea,E06000033,Midlands and East,East of England,23,182773,22.375,110,125.83915567397811
+Croydon,E09000008,London,London,49,388563,22.477,108,126.10567655695472
+Barnsley,E08000016,North,Yorkshire and The Humber,32,248071,29.933,38,128.9953279504658
+West Suffolk,E07000245,Midlands and East,East of England,23,177302,16.245,188,129.72216895466494
+Spelthorne,E07000213,South,South East,13,99873,14.943,208,130.16530994362842
+Halton,E06000006,North,North West,17,129759,32.325,23,131.01210706001126
+Gloucester,E07000081,South,South West,17,129709,21.807,118,131.0626093794571
+Bury,E08000002,North,North West,25,190708,23.682,95,131.0904629066426
+Hillingdon,E09000017,London,London,41,309014,18.223,159,132.68007274751304
+Hertsmere,E07000098,Midlands and East,East of England,14,105471,13.938,227,132.73790899868212
+Broxbourne,E07000095,Midlands and East,East of England,13,97592,17.989,164,133.20763997048937
+Sandwell,E08000028,Midlands and East,West Midlands,44,329042,34.884,12,133.7215309899648
+Watford,E07000103,Midlands and East,East of England,13,96623,15.41,203,134.54353518313445
+Hackney,E09000012,London,London,38,280941,32.526,22,135.2597164529207
+Ealing,E09000009,London,London,47,340341,22.71,105,138.09679115945477
+Preston,E07000123,North,North West,20,144147,29.531,45,138.7472510700882
+"Kingston upon Hull, City of",E06000010,North,Yorkshire and The Humber,36,259126,40.564,4,138.9285521329392
+Lincoln,E07000138,Midlands and East,East Midlands,14,100049,26.889,60,139.9314335975372
+Barnet,E09000003,London,London,56,399007,16.148,190,140.34841494008876
+Boston,E07000136,Midlands and East,East Midlands,10,70837,22.967,102,141.1691630080325
+Greenwich,E09000011,London,London,41,289034,24.464,88,141.85182366088418
+Manchester,E08000003,North,North West,79,555741,40.005,6,142.15254947898393
+Cambridge,E07000008,Midlands and East,East of England,18,125063,14.855,210,143.92746055987783
+Leicester,E06000016,Midlands and East,East Midlands,51,354036,30.877,32,144.05314713757923
+Stockton-on-Tees,E06000004,North,North East,29,197419,25.79,73,146.89568886480023
+Copeland,E07000029,North,North West,10,68041,25.012,85,146.9702091386076
+Doncaster,E08000017,North,Yorkshire and The Humber,46,312785,30.289,37,147.0658759211599
+Rushmoor,E07000092,South,South East,14,94387,15.903,193,148.32551092841177
+Southwark,E09000028,London,London,48,320017,25.811,72,149.99203167331737
+Redcar and Cleveland,E06000003,North,North East,21,137228,29.792,40,153.02999387880024
+Redbridge,E09000026,London,London,47,305658,17.203,173,153.76662806142812
+St. Helens,E08000013,North,North West,28,181095,31.518,26,154.61498108727466
+Sunderland,E08000024,North,North East,43,277846,30.586,35,154.76199045514423
+Tower Hamlets,E09000030,London,London,52,331969,27.913,50,156.64113215390594
+North East Lincolnshire,E06000012,North,Yorkshire and The Humber,25,159364,31.335,29,156.8735724504907
+Havering,E09000016,London,London,41,260651,16.789,180,157.2984565568519
+Hammersmith and Fulham,E09000013,London,London,29,183544,22.27,112,158.00026151767423
+Darlington,E06000005,North,North East,17,107402,25.657,77,158.2838308411389
+Hartlepool,E06000001,North,North East,15,93836,35.037,10,159.85336118334115
+Hyndburn,E07000120,North,North West,13,81133,34.333,16,160.2307322544464
+Slough,E06000039,South,South East,24,149577,22.965,103,160.45247598227002
+Great Yarmouth,E07000145,Midlands and East,East of England,16,99198,33.097,20,161.29357446722716
+Waltham Forest,E09000031,London,London,45,276940,25.209,82,162.49007005127464
+Lewisham,E09000023,London,London,50,305309,26.661,63,163.7685099358355
+Gateshead,E08000037,North,North East,34,201950,28.217,47,168.35850458034167
+Reading,E06000038,South,South East,27,160337,19.619,141,168.3953173628046
+Norwich,E07000148,Midlands and East,East of England,24,142177,27.599,52,168.80367429331045
+Newham,E09000025,London,London,60,355266,29.577,43,168.88753778858657
+Harrow,E09000015,London,London,44,252338,15.031,207,174.3692983220918
+Ipswich,E07000202,Midlands and East,East of England,24,135979,25.89,71,176.49784157847904
+Sefton,E08000014,North,North West,49,275899,27.035,58,177.60122363618572
+Barking and Dagenham,E09000002,London,London,40,214107,32.768,21,186.8224766121612
+Hounslow,E09000018,London,London,51,271767,21.487,122,187.6607535131197
+Haringey,E09000014,London,London,50,266357,27.956,49,187.71798751299946
+Barrow-in-Furness,E07000027,North,North West,13,66726,31.117,31,194.8266043221533
+Westminster,E09000033,London,London,53,269848,20.339,137,196.40686608757522
+Enfield,E09000010,London,London,67,333587,25.781,74,200.84715531480543
+Blackpool,E06000009,North,North West,28,138381,45.039,1,202.33991660704865
+Middlesbrough,E06000002,North,North East,29,141285,40.46,5,205.2588739073504
+Brent,E09000005,London,London,71,327753,25.558,79,216.6265449896721
+Liverpool,E08000012,North,North West,120,500474,42.412,3,239.77269548468053
+City of London,E09000001,London,London,23,10938,14.72,212,2102.761016639239
+NA,E06000053,NA,NA,NA,NA,12.005,258,NA
+NA,E07000004,NA,NA,NA,NA,11.183,276,NA
+NA,E07000005,NA,NA,NA,NA,6.952,315,NA
+NA,E07000006,NA,NA,NA,NA,9.481,294,NA
+NA,E07000007,NA,NA,NA,NA,10.742,281,NA
+NA,E07000150,NA,NA,NA,NA,25.706,76,NA
+NA,E07000151,NA,NA,NA,NA,13.184,238,NA
+NA,E07000152,NA,NA,NA,NA,13.897,228,NA
+NA,E07000153,NA,NA,NA,NA,19.23,144,NA
+NA,E07000154,NA,NA,NA,NA,23.358,97,NA
+NA,E07000155,NA,NA,NA,NA,7.652,312,NA
+NA,E07000156,NA,NA,NA,NA,21.676,120,NA

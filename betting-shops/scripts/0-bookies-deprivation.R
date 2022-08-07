@@ -61,7 +61,7 @@ betting_shops <- readxl::read_xlsx("betting-shops/data/betting-shops.xlsx") |>
   select(-account_number, -premises_activity)
 
 #### Save bookies-deprivation data to /public ####################################################################
-write.csv(betting_shops, "betting-shops/public/betting-shop-locations.csv")
+readr::write_csv(betting_shops, "betting-shops/public/betting-shop-locations.csv", )
 ##################################################################################################################
 
 
@@ -89,10 +89,13 @@ bookies <- betting_shops |>
 
 
 #### Save bookies-deprivation data to /public ####################################################################
-write.csv(bookies, "betting-shops/public/betting-shops-deprivation.csv")
+readr::write_csv(bookies, "betting-shops/public/betting-shops-deprivation.csv")
 ##################################################################################################################
 
 # to-do: get area data for local authorities where there are 0 bookies, set NAs to 0.
+
+
+readr::read_csv("betting-shops/public/betting-shops-deprivation.csv")
 
 ## Create chart comparing deprivation to bookies per mil
 bookies |>
