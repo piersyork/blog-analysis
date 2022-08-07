@@ -57,7 +57,8 @@ get_area_data <- function(x) {
 
 betting_shops <- readxl::read_xlsx("betting-shops/data/betting-shops.xlsx") |>
   janitor::clean_names() |>
-  get_area_data()
+  get_area_data() |>
+  select(-account_number, -premises_activity)
 
 #### Save bookies-deprivation data to /public ####################################################################
 readr::write_csv(betting_shops, "betting-shops/public/betting-shop-locations.csv")
