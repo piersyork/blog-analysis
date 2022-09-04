@@ -9,7 +9,7 @@ box::use(functions/theme[...])
 # - Bookmakers are profiting off of deprivation, there is little councils can do to stop them.
 # -
 
-readxl::read_xlsx("~/Downloads/Industry_Statistics_November_2021.xlsx", sheet = "6a", range = "A9:O21", .name_repair = "minimal") |>
+readxl::read_xlsx("~/Downloads/Industry_Statistics_-_July_2022_Revision.xlsx", sheet = "6a", range = "A9:O21", .name_repair = "minimal") |>
   select(1:8) |>
   janitor::clean_names() |>
   mutate(year = as.numeric(stringr::word(reporting_period, 5, -1)), .before = total) |>
@@ -21,7 +21,7 @@ readxl::read_xlsx("~/Downloads/Industry_Statistics_November_2021.xlsx", sheet = 
   geom_line() +
   ggrepel::geom_text_repel(hjust = 0, xlim = Inf, na.rm = TRUE, segment.colour = "grey") +
   coord_cartesian(clip = "off") +
-  scale_colour_piers() +
+  scale_colour_ons() +
   scale_y_continuous(labels = scales::label_dollar(prefix = "£"), limits = c(0, NA)) +
   scale_x_continuous(breaks = seq(2010, 2020, 2)) +
   theme_piers() +
@@ -34,16 +34,38 @@ readxl::read_xlsx("~/Downloads/Industry_Statistics_November_2021.xlsx", sheet = 
        caption = "Source: Gambling Commission Industry Statistics, November 2021",
        x = "")
 
-gambling_yield <- readxl::read_xlsx("~/Downloads/Industry_Statistics_November_2021.xlsx", sheet = "1", range = "A8:M21", .name_repair = "minimal") |>
+gambling_yield <- readxl::read_xlsx("~/Downloads/Industry_Statistics_-_July_2022_Revision.xlsx", sheet = "1", range = "A8:M21", .name_repair = "minimal") |>
   janitor::clean_names() |>
   select(-contains("total"), -percent_change) |>
-  mutate(year = as.numeric(stringr::word(reporting_period, 5) |> stringr::str_remove("P")), .before = reporting_period,
+  mutate(year = as.numeric(stringr::word(reporting_period, 5) |> stringr::str_remove("P|R")), .before = reporting_period,
          across(everything(), as.double)) |>
   select(-reporting_period) |>
   tidyr::pivot_longer(arcades_non_remote:the_national_lottery_remote_and_non_remote,
                       names_to = "category", values_to = "yield")
 
-gambling_yield |>
+premises_plot <- readxl::read_xlsx("~/Downloads/Industry_Statistics_-_July_2022_Revision.xlsx",
+                  sheet = "3", range = "A9:H22", .name_repair = "minimal",
+                  col_types = c("date", rep("numeric", 7))) |>
+  janitor::clean_names() |>
+  mutate(year = lubridate::year(reporting_period)) |>
+  ggplot(aes(year, betting)) +
+  geom_line(colour = "#12436D") +
+  geom_point(colour = "#12436D") +
+  scale_y_continuous(limits = c(0, 10e3)) +
+  scale_x_continuous(limits = c(2009, NA), breaks = seq(2010, 2020, 2)) +
+  theme_piers() +
+  theme(plot.margin = margin(11, 55, 5, 10),
+        plot.title = element_text(size = 14),
+        legend.position = "none",
+        axis.title.y = element_blank(),
+        panel.grid.major.x = element_blank()) +
+  labs(title = "Even before covid, the number of betting \nshops has been steadily decreasing",
+       subtitle = "Number of betting shops, years ending March",
+       caption = "", x = "")
+
+
+
+yield_plot <- gambling_yield |>
   filter(category %in% c("betting_non_remote", "betting_remote")) |>
   na.omit() |>
   group_by(category) |>
@@ -51,18 +73,32 @@ gambling_yield |>
   geom_line() +
   geom_point(size = 1) +
   theme_piers() +
-  scale_colour_piers() +
+  scale_colour_ons() +
   scale_y_continuous(labels = scales::label_dollar(prefix = "£"), limits = c(0, NA)) +
   scale_x_continuous(breaks = seq(2010, 2020, 2)) +
-  annotate("text", x = 2017.3, y = 3060, label = "Non-remote betting", colour = "#393A76") +
-  annotate("text", x = 2018.4, y = 1850, label = "Remote betting", colour = "#BE0E34") +
+  annotate("text", x = 2016.8, y = 3060, label = "Non-remote betting", colour = "#393A76") +
+  annotate("text", x = 2018.4, y = 1750, label = "Remote betting", colour = "#BE0E34") +
   theme(legend.position = "none",
+        plot.title = element_text(size = 14),
         axis.title.y = element_blank(),
         panel.grid.major.x = element_blank()) +
-  labs(title = "Profit from remote betting is steadily increasing as \nin-shop betting begins its descent",
-       subtitle = "Gross gambling yield (£ millions), years to March",
-       caption = "Source: Gambling Commission Industry Statistics, November 2021",
+  labs(title = "Profit from remote betting is steadily increasing as \nin-shop betting takes a steep fall",
+       subtitle = "Gross gambling yield (£ millions), years ending March",
+       caption = "Source: Gambling Commission Industry Statistics, July 2022",
        x = "")
+
+title <- ggdraw() +
+  draw_label(
+    "The decline of in-preson betting",
+    fontface = "bold",
+    size = 20,
+    hjust = 1.15,
+    vjust = 0.2,
+  )
+
+grid_plots <- cowplot::plot_grid(yield_plot, premises_plot)
+cowplot::plot_grid(title, grid_plots, nrow = 2, rel_heights = c(0.12, 1))
+
 
 in_person <- readxl::read_xlsx("~/Downloads/FINAL_Survey-data-on-gambling-participation-April-2022_-_.xlsx",
                   sheet = "1e", range = "A30:C34", col_names = c("year", "mode", "participation")) |>
@@ -73,6 +109,24 @@ online <- readxl::read_xlsx("~/Downloads/FINAL_Survey-data-on-gambling-participa
   mutate(year = as.numeric(stringr::word(year, 4)), mode = "Online")
 
 bind_rows(in_person, online) |>
+  ggplot(aes(year, participation, colour = mode)) +
+  geom_line() +
+  geom_point(size = 1) +
+  annotate("text", x = 2020.6, y = 22, label = "In-person", colour = "#393A76", size = 4.2) +
+  annotate("text", x = 2019.6, y = 14.7, label = "Online", colour = "#BE0E34", size = 4.2) +
+  theme_piers() +
+  scale_colour_ons() +
+  scale_y_continuous(labels = scales::label_number(accuracy = 1, suffix = "%"), limits = c(0, NA)) +
+  theme(legend.position = "none",
+        axis.title = element_blank(),
+        panel.grid.major.x = element_blank(), plot.caption = element_text(vjust = -1)) +
+  labs(title = "People are gambling in-person less since the covid \npandemic",
+       subtitle = "Respondents who have gambled in the last 4 weeks; years are to the \nend of March",
+       caption = "Source: Gambling Commission")
+
+mar
+
+bind_rows(in_person, online) |>
   ggplot(aes(year, participation, fill = mode)) +
   geom_col(position = position_dodge(width = 0.7), width = 0.6, ) +
   theme_piers() +
@@ -80,23 +134,6 @@ bind_rows(in_person, online) |>
   theme(legend.position = "top",
         legend.title = element_blank(),
         axis.title = element_blank())
-
-bind_rows(in_person, online) |>
-  ggplot(aes(year, participation, colour = mode)) +
-  geom_line() +
-  geom_point(size = 1) +
-  annotate("text", x = 2020.6, y = 22, label = "In-person", colour = "#393A76", size = 4.2) +
-  annotate("text", x = 2019.6, y = 14.7, label = "Online", colour = "#BE0E34", size = 4.2) +
-  theme_piers() +
-  scale_colour_piers() +
-  scale_y_continuous(labels = scales::label_number(accuracy = 1, suffix = "%"), limits = c(0, NA)) +
-  theme(legend.position = "none",
-        axis.title = element_blank(),
-        panel.grid.major.x = element_blank()) +
-  labs(title = "People are gambling in-person less since the covid \npandemic",
-       subtitle = "Respondents who have gambled in the last 4 weeks; years are to the \nend of March",
-       caption = "Source: Gambling Commission")
-
 
 bind_rows(in_person, online) |>
   group_by(mode) |>
@@ -123,6 +160,7 @@ gb_population <- readxl::read_xls("betting-shops/data/uk-population-estimates-mi
 gambling_yield |>
   filter(category == "betting_non_remote", year == 2020) |>
   pull(yield)
+
 
 
 

@@ -95,7 +95,6 @@ readr::write_csv(bookies, "betting-shops/public/betting-shops-deprivation.csv")
 # to-do: get area data for local authorities where there are 0 bookies, set NAs to 0.
 
 
-readr::read_csv("betting-shops/public/betting-shops-deprivation.csv")
 
 ## Create chart comparing deprivation to bookies per mil
 bookies |>
@@ -132,7 +131,10 @@ bookies |>
        caption = "Note: Excludes City of London
 Source: Analysis of Gambling Commission FoI; Ministry of Housing, Communties and Local Government") +
   guides(colour = guide_legend(override.aes = list(size = 4, shape = 16, alpha = 0.5))) +
-  theme(plot.caption = element_text(hjust = 0, size = 10))
+  theme(plot.caption = element_text(hjust = 0, size = 10),
+        legend.position = c(0.13, 0.8),
+        legend.title = element_blank(),
+        legend.background = element_rect(colour = "grey60"))
 
 bookies |>
   filter(!is.na(region)) |>
@@ -205,7 +207,7 @@ decile_bookies |>
 
 
 
-
+betting_shops |> nrow()
 
 
 

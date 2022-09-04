@@ -52,3 +52,40 @@ scale_fill_piers <- function(alpha = 1, ...) {
 scale_colour_piers <- function(alpha = 1, ...) {
   ggplot2::discrete_scale("color", "piers", pal_piers(alpha), ...)
 }
+
+
+#' @export
+pal_ons <- function(alpha) {
+  ons_palette <- c(
+    "DarkBlue" = "#12436D",
+    "Orange" = "#F46A25",
+    "Turquoise" = "#28A197",
+    "DarkPink" = "#801650",
+    "darkGrey" = "#3D3D3D",
+    "lightPurple" = "#A285D1"
+  )
+  if (alpha > 1 | alpha <= 0)
+    stop("alpha must be in (0, 1]")
+  raw_cols = ons_palette
+  raw_cols_rgb = grDevices::col2rgb(raw_cols)
+  alpha_cols = grDevices::rgb(raw_cols_rgb[1, ], raw_cols_rgb[2, ],
+                              raw_cols_rgb[3, ], alpha = alpha * 255, names = names(raw_cols),
+                              maxColorValue = 255)
+
+  scales::manual_pal(unname(alpha_cols))
+}
+
+#' @export
+scale_fill_ons <- function(alpha = 1, ...) {
+  ggplot2::discrete_scale("fill", "ons", pal_ons(alpha), ...)
+}
+
+
+#' @export
+scale_colour_ons <- function(alpha = 1, ...) {
+  ggplot2::discrete_scale("color", "ons", pal_ons(alpha), ...)
+}
+
+
+
+
