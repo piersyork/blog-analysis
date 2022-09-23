@@ -87,8 +87,8 @@ yield_plot <- gambling_yield |>
        caption = "Source: Gambling Commission Industry Statistics, July 2022",
        x = "")
 
-title <- ggdraw() +
-  draw_label(
+title <- cowplot::ggdraw() +
+  cowplot::draw_label(
     "The decline of in-preson betting",
     fontface = "bold",
     size = 20,
@@ -124,7 +124,6 @@ bind_rows(in_person, online) |>
        subtitle = "Respondents who have gambled in the last 4 weeks; years are to the \nend of March",
        caption = "Source: Gambling Commission")
 
-mar
 
 bind_rows(in_person, online) |>
   ggplot(aes(year, participation, fill = mode)) +

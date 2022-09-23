@@ -6,16 +6,16 @@ library(ggplot2)
 library(dplyr)
 library(data.table)
 
-whr <- readxl::read_xls("~/Downloads/DataForTable2.1.xls") |>
+whr <- readxl::read_xls("happiness/raw-data/DataForTable2.1.xls") |>
   janitor::clean_names() |>
   as.data.table()
 
-satis <- readxl::read_xls("~/Downloads/Appendix_2_Data_for_Figure_2.1.xls") |>
+satis <- readxl::read_xls("happiness/raw-data/Appendix_2_Data_for_Figure_2.1.xls") |>
   janitor::clean_names() |>
   as.data.table() |>
   na.omit()
 
-scores_2017 <- readxl::read_xlsx("~/Downloads/final-data-for-figures-in-chapter-2-whr-2017.xlsx", sheet = 2) |>
+scores_2017 <- readxl::read_xlsx("happiness/raw-data/final-data-for-figures-in-chapter-2-whr-2017.xlsx", sheet = 2) |>
   janitor::clean_names() |>
   na.omit() |>
   as.data.table()
@@ -38,7 +38,7 @@ clean_2017 <- scores_2017[
 
 clean_happiness |>
   na.omit() |>
-  ggplot(aes(happiness_score, continent, colour = continent)) +
+  ggplot(aes(happiness_score, forcats::fct_reorder(continent, happiness_score, mean), colour = continent)) +
   ggdist::geom_dots(binwidth = 0.07, show.legend = FALSE, shape = 19) +
   scale_x_continuous(breaks = c(2:8), limits = c(2, 8)) +
   scale_y_discrete(expand = c(0.05, 0.01)) +
@@ -51,17 +51,21 @@ clean_happiness |>
         axis.ticks.y = element_blank(),
         legend.position = "none",
         plot.caption = element_text(hjust = 0),
-        plot.caption.position = "plot") +
+        plot.caption.position = "plot",
+        plot.margin = margin(15, 30, 5, 5)) +
   labs(title = "Of the 25% least happy countries, almost 70% are \nin Africa",
        subtitle = "The distribution of happiness around the world shows a large \nhappiness inequality",
        x = "Happiness Score",
        caption = "Source: World Happiness Report 2022 \nHappiness is measured on a scale of one to ten, calculated using six factors from the Gallup World Survey.") +
-  annotate("text", 3.6, 3.6, label = "Afghanistan", colour = "grey60") +
-  annotate("curve", 3.1, 3.6, xend = 2.5, yend = 3.2, colour = "grey",
-           curvature = 0.2, arrow = arrow(length = unit(0.4, "cm"))) +
+  annotate("text", 3.6, 2.6, label = "Afghanistan", colour = "grey60") +
+  annotate("curve", 3.1, 2.6, xend = 2.5, yend = 2.2, colour = "grey",
+           curvature = 0.18, arrow = arrow(length = unit(0.4, "cm"))) +
   annotate("text", 7.1, 1.6, label = "Mauritius", colour = "grey60") +
   annotate("curve", 6.7, 1.6, xend = 6.15, yend = 1.2, colour = "grey",
-           curvature = 0.2, arrow = arrow(length = unit(0.4, "cm")))
+           curvature = 0.18, arrow = arrow(length = unit(0.4, "cm"))) +
+  annotate("text", 8.05, 4.6, label = "Finland", colour = "grey60") +
+  annotate("curve", 6.7, 4.6, xend = 6.15, yend = 4.2, colour = "grey",
+           curvature = 0.18, arrow = arrow(length = unit(0.4, "cm")))
 
 clean_happiness[
   order(happiness_score),
